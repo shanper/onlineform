@@ -27,9 +27,9 @@ $(document).ready(function () {
       encode: true,
     }).done(function (data) {
       console.log(data);
-
+alert(data.errors);
       if (!data.success) {
-      alert(data.errors);
+      
         if (data.errors.name) {
           $("#name-group").addClass("has-error");
           $("#name-group").append(
