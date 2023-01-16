@@ -29,6 +29,7 @@ $(document).ready(function () {
       console.log(data);
 
       if (!data.success) {
+      alert(data.errors);
         if (data.errors.name) {
           $("#name-group").addClass("has-error");
           $("#name-group").append(
