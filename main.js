@@ -21,7 +21,7 @@ $(document).ready(function () {
 
     $.ajax({
       type: "POST",
-      url: "process.php",
+      url: "http://jutu.ml/process.php",
       data: formData,
       dataType: "json",
       encode: true,
