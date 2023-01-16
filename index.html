@@ -1,5 +1,185 @@
-<html>
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Jutu - Coming Soon</title>
+<link href="bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>    
+    <!--<link href="bootstrap.css" rel="stylesheet" id="bootstrap-css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>-->
+
+    <script src="script.js"></script>
+    <script src="main.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <style>
+    #webcoderskull{
+        color: white;
+        position: absolute;
+        left: 0;
+        top: 25%;
+        padding: 0 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    canvas{
+        height:100vh;
+        background-color:#46B5F1;
+    }
+    #webcoderskull h1{
+    letter-spacing: 5px;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    }
+
+     .jbtn {
+      background-color:#46B5F1; 
+	  display: inline-block;
+	  padding: 15px 30px;
+	  border: 2px solid #fff;
+	  text-transform: uppercase;
+	  letter-spacing: 0.015em;
+	  font-size: 18px;
+	  font-weight: 700;
+	  line-height: 1;
+	  color: #fff;
+	  text-decoration: none;
+	  -webkit-transition: all 0.4s;
+	     -moz-transition: all 0.4s;
+	       -o-transition: all 0.4s;
+	          transition: all 0.4s;
+	}
+	.jbtn:hover {
+	  color: #005544;
+	  border-color: #005544;
+	}
+    h1::after {
+        background: #fff none repeat scroll 0 0;
+        content: "";
+        display: block;
+        height: 10px;
+        line-height: 1.1;
+        margin: 30px auto;
+        width: 80px;
+    }
+
+    p{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    </style>
+
+</head>
+
 <body>
-<h1>868¥£€*₩</h1>
+    <div id="particles">
+    <div id="webcoderskull">
+        <h1>We are Building Something Awesome!</h1>
+        <p>&nbsp;</p>
+        <h3>Get Paid To Your Clicks!</h3>
+        <p>Please note that this is not a get rich quick scheme. 
+        <p>You won't be able to replace your monthly income with this.</p> 
+        <p>We are introducing a <i><b>Daily, Small</b></i> and <i><b>Steady</b></i> income. </p>
+
+        <button id="show-modal-button" class="jbtn" data-toggle="modal" data-target="#exampleModal">
+        Join Us
+        </button>
+        
+            <!-- Modal Start-->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Please enter your detais.</h5>
+                    <button id="close-modal" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">                    
+                    <div class="card bg-light">
+                    <article class="card-body mx-auto" style="max-width: 400px;">
+                        <form action="" method="POST">
+                            <div id="aname-group" class="form-group row">
+                                <label for="name" class="col-md-4 col-form-label">Name</label>                
+                                <div class="col-md-8">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                                        </div>
+                                        <input id="name" required="required" name="name" class="form-control" placeholder="Full name" type="text">                               
+                                     </div>                                    
+                                </div>
+                            </div> <!-- form-group// -->
+                            <div class="form-group row">
+                                <label for="email" class="col-md-4 col-form-label">Email</label>                
+                                <div class="col-md-8">
+                                    <div class="input-group">
+                                         <div class="input-group-prepend">
+                                         <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                                    </div>
+                                    <input id="email" required="required" name="email" class="form-control" placeholder="Email address" type="email">
+                                    </div>
+                                </div>
+                               
+                            </div> <!-- form-group// -->
+                            <div class="form-group row">
+                                <label for="device" class="col-md-4 col-form-label">Device</label>                
+                                <div class="col-md-8">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"> <i class="fa fa-desktop"></i> </span>
+                                        </div>
+                                        <select id="device" required="required"  name="device" class="form-control">
+                                            <option value="1" selected disabled hidden>Select Device</option>
+                                            <option value="phone">Phone</option>
+                                            <option value="laptop">Laptop</option>
+                                            <option value="computer">Computer</option>
+                                            <option value="tablet">Tablet</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                            </div> <!-- form-group end.// -->                          
+                            <div class="form-group row">
+                                <label for="device" class="col-md-4 col-form-label">Country</label>                
+                                <div class="col-md-8">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"> <i class="fa fa-globe"></i> </span>
+                                        </div>
+                                        <select id="country" required="required"  name="country" class="form-control">
+                                            <option value="1" selected disabled hidden> Select Country</option>
+                                            <option>Designer</option>
+                                            <option>Manager</option>
+                                            <option>Accaunting</option>
+                                        </select>
+                                    </div>
+                                </div>                                
+                            </div> <!-- form-group end.// -->                                  
+                            <div class="form-group">
+                                <button id="join-button"  class="btn btn-primary btn-block"> Join  </button>
+                            </div> <!-- form-group// -->      
+                        
+                    </form>
+                    </article>
+                    </div> <!-- card.// -->
+                </div>
+                <!--<div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>-->
+                </div>
+            </div>
+            </div>
+<!-- Modal End-->
+    </div>
+    </div>
+
 </body>
 </html>
