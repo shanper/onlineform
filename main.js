@@ -26,8 +26,7 @@ $(document).ready(function () {
       dataType: "json",
       encode: true,
     }).done(function (data) {
-      console.log(data);
-alert(data.errors);
+      
       if (!data.success) {
       
         if (data.errors.name) {
