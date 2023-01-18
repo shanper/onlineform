@@ -61,17 +61,16 @@ $(document).ready(function () {
             $("form").html(
                 `<div class="alert alert-success">
                     <h3>
-                        Thank You For Joining Us.
+                        Saving your details...
                     </h3>
-                    <h4>
-                        We will contact you soon.
-                    </h4>
+                    
                 </div>
                 `
             );
             $("#show-modal-button").hide();
             setTimeout(function() {
                 $("#close-modal").click();
+                $("#msgdiv").show();
             }, 3000);
             
           }
