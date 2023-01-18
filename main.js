@@ -69,8 +69,7 @@ $(document).ready(function () {
             );
             $("#show-modal-button").hide();
             setTimeout(function() {
-                $("#close-modal").click();
-                $("#msgdiv").show();
+                window.location ="result.html";
             }, 3000);
             
           }
