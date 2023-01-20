@@ -41,9 +41,9 @@ if (!empty($errors)) {
         
     // Performing insert query execution
     // here our table name is college
-    $sql = "INSERT INTO contacts(`name`, `email`, `device`)  
+    $sql = "INSERT INTO contacts(`name`, `email`, `device`,`country`)  
     VALUES ('$name',
-        '$email','$device')";
+        '$email','$device','$country')";
     if(mysqli_query($conn, $sql)){
         // echo "<h3>data stored in a database successfully."
         //     . " Please browse your localhost php my admin"
